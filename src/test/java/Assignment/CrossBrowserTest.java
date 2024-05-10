@@ -27,14 +27,14 @@ public class CrossBrowserTest {
 
 		} else if (bname.equalsIgnoreCase("Edge")) {
 			EdgeOptions option = new EdgeOptions();
-			Reporter.log("Test executing on Chrome", true);
+			Reporter.log("Test executing on Edge", true);
 
 			driver = new RemoteWebDriver(new URL("http://localhost:4444"), option);
 			Reporter.log("Driver session established with server", true);
 
 		} else if (bname.equalsIgnoreCase("Firefox")) {
 			FirefoxOptions option = new FirefoxOptions();
-			Reporter.log("Test executing on Chrome", true);
+			Reporter.log("Test executing on Firefox", true);
 
 			driver = new RemoteWebDriver(new URL("http://localhost:4444"), option);
 			Reporter.log("Driver session established with server", true);
@@ -46,7 +46,7 @@ public class CrossBrowserTest {
 		Reporter.log("Test executing from amazon application", true);
 		System.out.println("Title is =" + driver.getTitle());
 
-		Reporter.log("Test execution on Chrome completed", true);
+		Reporter.log("Test execution completed", true);
 
 		driver.quit();
 	}
