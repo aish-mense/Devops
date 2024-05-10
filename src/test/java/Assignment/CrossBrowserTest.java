@@ -15,7 +15,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 public class CrossBrowserTest {
 	WebDriver driver;
 
-	@Parameters({ "bname" })
+	@Parameters({"bname"})
 	@Test
 	public void browserTest(String bname) throws MalformedURLException, InterruptedException {
 		if (bname.equalsIgnoreCase("Chrome")) {
